@@ -42,8 +42,8 @@ go
 
 --Create Customer table
 create table Customer (
-	PersonID	int			    Not Null,
-	Status		char(15)	    Not Null,
+	PersonID	int			Not Null,
+	Status		char(15)	   	Not Null,
 	--primary key
 	constraint customer_personid_pk primary key(PersonID),
 	--foreign key
@@ -55,10 +55,10 @@ go
 
 --Create Employee table
 create table Employee (
-	PersonID	    int				    Not Null,
-	SSN			    char(11)			Not Null, 
-	HireDate	    date			    Not Null,
-	Pay			    decimal(9,2)	    Not Null,
+	PersonID	    	int			Not Null,
+	SSN			char(11)		Not Null, 
+	HireDate	    	date			Not Null,
+	Pay			decimal(9,2)	    	Not Null,
 	--primary key
 	constraint employee_personid_pk primary key(PersonID),
 	--foreign key
@@ -120,7 +120,7 @@ go
 create table Order_Product (
 	OrderID			int				    Not Null,
 	ProductID		int			  	    Not Null,
-	Price			decimal(9,2)	    Not Null,
+	Price			decimal(9,2)	    		    Not Null,
 	Quantity		int				    Not Null,
 	--Primary Key Constraint
 	constraint Order_Product_OrderProduct_pk primary key(OrderID, ProductID),
